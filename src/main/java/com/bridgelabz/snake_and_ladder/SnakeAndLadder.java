@@ -14,7 +14,6 @@ public class SnakeAndLadder {
             System.out.println("The value of the die is " + randomCheck);
             int option = (int) (Math.random() * 10) % 3;
             switch (option) {
-
                 case 1:
                     System.out.println("Ladder \nplayer moves ahead " + randomCheck);
                     position += randomCheck;
@@ -37,9 +36,10 @@ public class SnakeAndLadder {
                 position = restart;
                 System.out.println("You came back to start.");
             } else {
-                System.out.println("New Position: " + position);
+                System.out.println("New Position after the roll of die: " + position);
             }
         }
         System.out.println("You Won The Game");
+        System.out.println("The number of time dice rolls is " +diceRoll);
     }
 }
